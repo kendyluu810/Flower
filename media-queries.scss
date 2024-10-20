@@ -1,0 +1,49 @@
+/* Media queries for responsive design */
+
+/* Tablet and smaller devices */
+@media (max-width: 768px) {
+    .vietnam-womens-day {
+        font-size: 1.8em;
+        top: 10px; /* Adjust position closer to the top */
+    }
+
+    .flowers {
+        display: block; /* Keep flowers visible on tablet */
+        transform: scale(1); /* Slightly smaller flowers */
+        margin-top: 10px; /* Space between text and flowers */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .vietnam-womens-day {
+        font-size: 1.5em;
+        top: 40px; /* Keep the text closer to the flower */
+    }
+
+    .flowers {
+        display: block; /* Ensure flowers are visible */
+        transform: scale(0.9); /* Reduce size for better fit on mobile */
+        margin-top: 20px; /* Reduce space between text and flowers */
+    }
+
+    .flower {
+        margin-top: 10px; /* Ensure flowers have minimal spacing between them */
+    }
+
+    .long-g {
+        display: none; /* Hide long grass to reduce clutter */
+    }
+}
+
+/* Desktop: Keep flowers large */
+@media (min-width: 769px) {
+    .vietnam-womens-day {
+        font-size: 2.5em;
+    }
+
+    .flowers {
+        display: block; /* Show flowers in full size */
+        transform: scale(0.9); /* Full size for desktop */
+    }
+}
